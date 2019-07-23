@@ -50,12 +50,12 @@
             new Hilo.Sprite({
                 frames: atlas.getSprite('fish'),
                 x: 0,
-                y: 100,
+                y: 200,
                 interval: 6,
                 timeBased: false,
                 loop: true,
                 onUpdate: function(){
-                    if(this.x > stage.width - this.pivotX){
+                    if(this.x > stage.width - 174){
                         this.x = 0;
                     }else{
                         this.x += 3;
