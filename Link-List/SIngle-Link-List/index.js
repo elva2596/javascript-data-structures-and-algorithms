@@ -64,6 +64,11 @@ class LinkList{
     return true;
   }
 
+  /**
+   * @description: 删除指定位置元素
+   * @param {type} 
+   * @return: 
+   */
   removeAt(position) {
     if(position < 0 || position >= this.length) {
       console.error(`the position you remove is invalid`)
