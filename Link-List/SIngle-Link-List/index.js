@@ -87,6 +87,11 @@ class LinkList{
     return current.value;
   }
 
+  /**
+   * @description: 寻找元素下标
+   * @param {type} 
+   * @return {number}
+   */
   findIndex(element) {
     let current = this.head, index = 0;
 
@@ -108,5 +113,21 @@ class LinkList{
     return this.removeAt(index)
   }
 
-  
+  isEmpty() {
+    return !!this.length
+  }
+
+  toString(){
+    let current = this.head, string = '';
+
+    while(current){
+      string += current.value;
+      current = current.next;
+    }
+    return string;
+  }
+
+  print() {
+    console.log(this.toString()) 
+  }
 }
